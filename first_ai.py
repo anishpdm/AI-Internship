@@ -33,6 +33,8 @@ model.compile(optimizer="adam", loss="mse")
 model.fit(X_train,Y_train, epochs=100)
 
 
+
+
 Y_pred = model.predict(X_test)
 mse= mean_squared_error(Y_test,Y_pred)
 rmse= np.sqrt(mse)
